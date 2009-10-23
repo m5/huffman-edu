@@ -1,0 +1,9 @@
+bin_PROGRAMS = sorting
+libsorting_LTLIBRARIES = libsorting.la
+libsortingdir = ~/src/368/Project1/src
+AM_CFLAGS = -g -pg
+AM_CXXFLAGS = -g -pg
+LDFLAGS = -g -pg
+libsorting_la_SOURCES = sorting.c
+sorting_SOURCES = sorting_main.c 
+sorting_LDADD = libsorting.la
